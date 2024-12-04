@@ -3,7 +3,13 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get('/welcome/{locale}', function (string $locale) {
+    if (! in_array($locale, ['en', 'uk'])) {
+        abort(400);
+    }
+
+    App::setLocale($locale);
+
     return view('welcome');
 });
 
