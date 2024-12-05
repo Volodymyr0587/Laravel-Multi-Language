@@ -1,0 +1,7 @@
+{
+    "Email": "Електрона адреса",
+    "Password": "Пароль",
+    "Remember me": "Запам'ятати мене",
+    "{0} There are none|[1,19] There are some|[20,*] There are many": "{0} Немає жодного|[1,19] Є декілька|[20,*] Є багато",
+    "{0} There are no users|[1,*] There are :value users": "{0} Немає користувачів|[1,*] Є користувачі :value"
+}

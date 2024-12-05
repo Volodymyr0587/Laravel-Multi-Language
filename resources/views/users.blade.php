@@ -21,9 +21,7 @@
     </head>
     <body class="antialiased">
        <h1 class="text-4xl font-bold">{{ __('welcome.welcome') }}</h1>
-       <h2 class="text-2xl text-blue-400">{{ __('welcome.name-this-color') }}</h2>
-       <h2 class="text-2xl text-blue-400">{{ trans_choice('welcome.apples', 0) }}</h2>
-       <h2 class="text-2xl text-blue-400">{{ trans_choice('welcome.apples', 10) }}</h2>
-       <h2 class="text-2xl text-blue-400">{{ trans_choice('{0} There are none|[1,19] There are some|[20,*] There are many', 30) }}</h2>
+       <h2 class="text-2xl text-blue-400">{{ trans_choice('welcome.users', $users, ['value' => $users]) }}</h2>
+       <h2 class="text-2xl text-blue-400">{{ trans_choice('{0} There are no users|[1,*] There are :value users', $users, ['value' => $users]) }}</h2>
     </body>
 </html>

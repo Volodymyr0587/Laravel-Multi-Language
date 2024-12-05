@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\LocalizationController;
-use App\Http\Controllers\ProfileController;
+use App\Models\User;
 use App\Http\Middleware\Localization;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\LocalizationController;
 
 
 Route::get('/localization/{locale}', LocalizationController::class)->name('localization');
@@ -12,6 +13,10 @@ Route::middleware(Localization::class)
     ->group(function () {
 
         Route::view('/', 'welcome');
+        Route::get('/users', function () {
+            $users = User::count();
+            return view('users', compact('users'));
+        });
 
         Route::get('/dashboard', function () {
             return view('dashboard');

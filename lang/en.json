@@ -1,5 +1,7 @@
 {
-    "Email": "Email Test",
-    "Password": "Password Test",
-    "Remember me": "Remember me Test"
+    "Email": "Email",
+    "Password": "Password",
+    "Remember me": "Remember me",
+    "{0} There are none|[1,19] There are some|[20,*] There are many": "{0} There are none|[1,19] There are some|[20,*] There are many",
+    "{0} There are no users|[1,*] There are :value users": "{0} There are no users|[1,*] There are :value users"
 }
