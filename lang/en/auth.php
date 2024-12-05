@@ -22,6 +22,8 @@ return [
         'email' => 'Email',
         'password' => 'Password',
         'password_confirmation' => 'Confirm Password',
+        'already_registered' => 'Already registered',
+        'register' => 'Register',
     ],
 
 ];
