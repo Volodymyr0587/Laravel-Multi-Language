@@ -25,5 +25,6 @@ return [
         'already_registered' => 'Вже зареєстрований',
         'register' => 'Зареєструватися',
     ],
+    'login-message' => 'Ви увійшли в систему!'
 
 ];

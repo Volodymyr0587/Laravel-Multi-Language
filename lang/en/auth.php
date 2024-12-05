@@ -25,5 +25,6 @@ return [
         'already_registered' => 'Already registered',
         'register' => 'Register',
     ],
+    'login-message' => 'You are logged in!'
 
 ];
